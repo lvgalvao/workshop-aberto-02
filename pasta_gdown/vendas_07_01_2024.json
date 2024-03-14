@@ -1,0 +1,12 @@
+[
+    {"data_venda":"2024-01-07","valor":57.58,"quantidade":8,"cliente_id":29,"categoria":"Brinquedos"},
+    {"data_venda":"2024-01-07","valor":53.95,"quantidade":1,"cliente_id":28,"categoria":"Livros"},
+    {"data_venda":"2024-01-07","valor":104.39,"quantidade":2,"cliente_id":7,"categoria":"Alimentos"},
+    {"data_venda":"2024-01-07","valor":345.35,"quantidade":7,"cliente_id":24,"categoria":"Eletrônicos"},
+    {"data_venda":"2024-01-07","valor":217.82,"quantidade":6,"cliente_id":19,"categoria":"Roupas"},
+    {"data_venda":"2024-01-07","valor":381.22,"quantidade":8,"cliente_id":48,"categoria":"Brinquedos"},
+    {"data_venda":"2024-01-07","valor":401.43,"quantidade":9,"cliente_id":34,"categoria":"Livros"},
+    {"data_venda":"2024-01-07","valor":346.2,"quantidade":2,"cliente_id":12,"categoria":"Alimentos"},
+    {"data_venda":"2024-01-07","valor":364.67,"quantidade":4,"cliente_id":6,"categoria":"Eletrônicos"},
+    {"data_venda":"2024-01-07","valor":330.62,"quantidade":9,"cliente_id":47,"categoria":"Roupas"}
+]

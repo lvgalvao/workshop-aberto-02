@@ -1,0 +1,11 @@
+data_venda,valor,quantidade,cliente_id,categoria
+2024-01-08,119.8,1,47,Brinquedos
+2024-01-08,277.9,4,7,Livros
+2024-01-08,252.38,6,19,Alimentos
+2024-01-08,130.5,8,16,Eletrônicos
+2024-01-08,95.8,9,40,Roupas
+2024-01-08,333.22,4,29,Brinquedos
+2024-01-08,332.72,8,5,Livros
+2024-01-08,296.52,8,20,Alimentos
+2024-01-08,183.63,7,15,Eletrônicos
+2024-01-08,129.78,4,19,Roupas
