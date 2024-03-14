@@ -71,11 +71,11 @@ def salvar_no_postgres(df, tabela):
     engine = create_engine(DATABASE_URL)
     df.to_sql(tabela, con=engine, if_exists='append', index=False)
 
-if __name__ == "__main__":
+def pipeline():
     url_pasta = 'https://drive.google.com/drive/folders/19flL9P8UV9aSu4iQtM6Ymv-77VtFcECP'
     diretorio_local = './pasta_gdown'
 
-    baixar_pasta_google_drive(url_pasta, diretorio_local)
+    # baixar_pasta_google_drive(url_pasta, diretorio_local)
     con = conectar_banco()
     inicializar_tabela(con)
     processados = arquivos_processados(con)
@@ -91,3 +91,6 @@ if __name__ == "__main__":
             print(f"Arquivo {nome_arquivo} processado e salvo.")
         else:
             print(f"Arquivo {nome_arquivo} já foi processado anteriormente.")
+
+if __name__ == "__main__":
+    pipeline()
