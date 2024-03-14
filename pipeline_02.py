@@ -81,6 +81,7 @@ def pipeline():
     processados = arquivos_processados(con)
     arquivos_e_tipos = listar_arquivos_e_tipos(diretorio_local)
 
+    logs = []
     for caminho_do_arquivo, tipo in arquivos_e_tipos:
         nome_arquivo = os.path.basename(caminho_do_arquivo)
         if nome_arquivo not in processados:
@@ -89,8 +90,14 @@ def pipeline():
             salvar_no_postgres(df_transformado, "vendas_calculado")
             registrar_arquivo(con, nome_arquivo)
             print(f"Arquivo {nome_arquivo} processado e salvo.")
+            logs.append(f"Arquivo {nome_arquivo} processado e salvo.")
+
         else:
             print(f"Arquivo {nome_arquivo} já foi processado anteriormente.")
+            logs.append(f"Arquivo {nome_arquivo} já foi processado anteriormente.")
+
+    return logs
+    
 
 if __name__ == "__main__":
     pipeline()
